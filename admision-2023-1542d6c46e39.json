@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "admision-2023",
+  "private_key_id": "1542d6c46e3927fdef7e65f24616bcb29d9a225b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDStjNBweVn73Y9\n086xaqcWi8GmNPvvyWlYL4TWxjWybFYbm2QBFBU5OEpNP0ZDROh73Tc65TI+wUhB\nHK+63nOyYwUWDJvA/d94yS/+eFQchq52jbKlhLZ1On9RB8LOfvPM+4LYIfUFj5cA\nc42CSpfXb02+41b3ApfSoYzTHN0MJsyLqByiToF3YAkoQGonluTED0NNqhszdKXP\nXmiv4ESWgFgzqQCutXms4uvfOKpa8i8EiMAud/Ih45nEVXK4NWKhLpyrQfZVY7wM\nPQc0Z/o5URQM+9WSL/Rd9w+cc/yuZErWcxQjlemvjP5sObILDGo1PiyLlsxD86rg\nm56pvH9LAgMBAAECggEASZ7jVcxbTO87zupcQ1zSOGxoIpxMkkE7D1a7AReL12VG\nyKqITGAp8i4at9atw/8lg3GNRISkA40go69ULuReZCt4sXWCTfHlzJvuquh76uOb\nvUxQ6MfvwBHKPhOKGv/8SthtpPpoU6MRzVSSUr2hQ+JdtZ5U2kULqspLG8/v47hf\nzUkpfMlAI2DUSczDsDRkBxQEN5p1ll3mDses4QQrDUtrw2JqeguT2bbyq1vvt/ck\nC8cIl15L6e35XrbN2bySmzH7CrKNhLie3WF7YIu7evEbVrBkySmp7l1WWE82E7R1\nVYlBy6k1nvy8gF9Wp7ex6cZ7A+jCubuky5EXDSHTgQKBgQD8i2ipuQYfjrYPmc+9\ncDIVhTMEGRFH42bGYX0v8AocDWkXTwqNgXutM0y1yD2aewLJdbi7Mi9Xvd60N/0x\nC5WkIHhXTKzxPNAxzDVQVk7TflH3bfHekjPQwSL1fASIDocnxLKyMV1x8vFAgleG\nDAQVhFN0vIHvrVHGW0S3GRRjKwKBgQDVmENO+rFlrj+t0OHjpOayRdvJA7uU/G70\njUa3uWhTOhCwrydzjTd/LynlHuOvCNgqHViAQHjGTaNTSJeHdDR09pZnwGlqWa/r\nZ4lTs1Vd1yQow9i2KSrFGLBc4BaR81ml/MVry/OKLnvoKWNEZs0xUsyRXh8Bi0T1\nXeXM9ELEYQKBgQDRdX71ZfRiMCdogRX/9RJVLwjFGVVv3nfbifgezmRUJ/tFzdTe\n0MoXOTkifFY7zlLdbLou6MzDZUNVDir9hrIyUov9PCckXl//LXP6kdsHJvos0g+N\nno1DUyz/lkDb59DJdycPDEqIvArEila1Yznv7rSZWdAbThFJB2HSywZRyQKBgGdu\nrGl6jJ0onD2XgUuzduOtYJke7Z9f/nr+Tth5OEPVQm/M4dXa9JzqQedp5efE6Ki8\nPTceAV5GCmkyJe66HwzkvEDRtDqD4+Si5qVZmmUu4Zu7+x17IfL/2aef/E4BAdCX\nbyKcSPsJN4ddQ2zEO2k/J0DdyzX8MxB+v+FYB10BAoGAPakmwe2q23BeddXItSPA\n151QCMPoxDO/jHN5AzJhR9SJLyhdUYac5mjkjgOwf1/f/gqdfgyWthILHagPUUlC\na/3UdzC3+6QOuq7S142PBxXrI87ZIEDpjRWWX/Ec9hX3BLveLWrvu+icLB078fq9\nwr/HHKvbOPuVcKoiuosS8K0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "admision2023@admision-2023.iam.gserviceaccount.com",
+  "client_id": "107416683247185838617",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admision2023%40admision-2023.iam.gserviceaccount.com"
+}

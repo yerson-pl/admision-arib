@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+{% block title %}
+    ADMISIÓN 2023
+{% endblock title %}
+
+{% block content %}
+<div id="Inscripcion">
+    
+  <div class="container text-center">
+      <h1>Admisión 2023</h1>
+      <div class="text-center" id="Inscripcion--info">
+          <p>Exámen Modalidad <b>VIRTUAL - 15 de ABRIL</b></p>
+          <button class="btn  btn-primary">CONTABILIDAD</button>
+          <button class="btn  btn-primary"> CONSTRUCCIÓN CIVIL</button>
+          <button class="btn  btn-primary">EXPLOTACIÓN MINERA</button>
+          
+          
+      </div>
+      <a  class="btn-inscripcion" href="/inscripcion">
+          <button>Inscribirse</button>
+      </a>
+      <div class="row ">
+          <div class="col-md-12" id="Inscripcion--requisitos">
+              <p>Para poder <b>INSCRIBIRTE</b> , adjuntar los siguientes requisitos.</p>
+              <ol>
+                  <b><ol>*Copia DNI</ol></b> 
+                  <b><ol>*Certificado de Estudios</ol></b>
+                  <b><ol>*Partida de nacimiento</ol></b>
+                  <b><ol>*Recibo de pago de admisión</ol></b>
+              </ol>
+          </div>
+      </div>
+      <div id="pagos--info">
+          <div class="pagos">
+              <p class="titulo">COSTO DERECHO DE ADMISIÓN : <B>S/.50.00</B></p>
+          </div>
+          <div class="text-center" id="Inscripcion--info">
+              <p>Prospecto de Admisión</p>
+              <a  class="btn-inscripcion" href="https://drive.google.com/file/d/1-GxiEdeqLrcoEl9rWQpNb0hVh-h-KqSS/view?usp=sharing" target="blank">
+                  <button>Descargar</button>
+              </a>
+          </div>
+
+          <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                  <p class="text-center titulo"><b>CUENTAS HABILITADAS</b></p>
+              </div>
+          </div>
+          <table class="table able-responsive table-striped table-condensed">
+              <thead>
+                  <tr>
+                      <th>Banco</th>
+                      <th>Moneda</th>
+                      <th>N° Cuenta</th>
+                      <th>Nombre</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      
+                      <td><img src="https://www.bn.com.pe/imagenes/logo-banco-nacion.png" alt="Banco de la nacion"></td>
+                      <td>Nuevos soles</td>
+                      <td>04-058-582269</td>
+                      <td>Rufo Abel Quispe Condori</td>
+                  </tr>
+                  <tr>
+                      <td><img height="45" src="data:image/png;base64,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" alt=""></td>
+                      <td>Nuevos soles</td>
+                      <td>977130243</td>
+                      <td>Rufo Abel Quispe Condori</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+  </div>
+</div>
+<footer>
+  <div class="container">
+      <div class="row ">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+              <h2>Informes</h2>
+              <h3>Alianza Renovada Ichuña Bélgica</h3>
+              <h4>Celular: 9771300243 / 954168298</h4>
+              <h4>Correo: admision@iestparib.edu.pe</h4>
+              <h4>Ichuña - Per&uacute;</h4>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4 text-center">
+             
+                  <a href="/inscripcion">
+                      <button class="buttons">INSCR&Iacute;BETE</button>
+                  </a>
+              
+          </div>
+      </div>
+  </div>
+</footer>
+{% endblock content %}
+    
+    

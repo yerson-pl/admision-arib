@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    ADMISIÓN 2023
+{% endblock title %}
+
+{% block content %}
+    <div class="px-4">
+      <h3 class="my-4">Lista de Postulantes </h3>
+      <a href="{% url 'admisions:postulante_print' %}" class="btn btn-warning" target="print"><span class="fa fa-print"></span> Imprimir</a>  
+    </div>
+    <table class="table align-middle mb-0 bg-white" id="ejemplo">
+      <thead class="bg-light">
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Estado</th>
+          <th>N° DNI</th>
+          <th>Link Voucher</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for postulante in postulantes  %}
+        <tr>
+          <td>
+            {{postulante.id}}
+          </td>
+          <td>
+            <div class="d-flex align-items-center">
+              <img
+                  src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                  />
+              <div class="ms-3">
+                <p class="fw-bold mb-1">{{postulante.nombre}}</p>
+                <p class="text-muted mb-0">{{postulante.correo}}</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <p class="fw-normal mb-1">{{ postulante.ap_paterno}}</p>
+            <p class="text-muted mb-0">{{postulante.ap_materno}}</p>
+          </td>
+          <td>
+            <span class="badge badge-success rounded-pill d-inline">Registrado</span>
+          </td>
+          <td>{{postulante.dni_num}}
+
+          </td>
+          <td>
+            <div class="ms-3">
+              <p>{{postulante.voucher.url}} </p>
+              <img src="{{postulante.voucher.url}}" alt="" class="pequeña" >
+            </div>
+          </td>
+          <td>
+            <button type="button" class="btn btn-success btn-sm btn-rounded">
+              Ficha
+            </button>
+            <a href="{% url 'admisions:postulante_print_one' postulante.id %}" target="print" class="btn btn-default btn-circle">  
+              <span class="fa fa-print"></span>  
+           </a> 
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
+    
+
+{% endblock content %}

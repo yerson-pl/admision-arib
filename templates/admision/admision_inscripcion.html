@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container my-4" style="background-color: aliceblue;">
+    <div class="card -2">
+        <div class="card-header">
+            <h3 class="text-center ">Formulario de Inscripción</h3> 
+        </div>
+        <div class="card-body">
+            <form action="" method="post" class="my-class" enctype="multipart/form-data"> {% csrf_token %}
+                <h4>Datos Personales</h4>
+                <div class="row">
+                    <div class="col-md-2">
+                        {{postulante_form.dni_num |as_crispy_field}}
+                    </div>
+                    <div class="col-md-3">
+                        {{postulante_form.ap_paterno |as_crispy_field}}
+                    </div>
+                    <div class="col-md-3">
+                        {{postulante_form.ap_materno |as_crispy_field}}
+                    </div>
+                    <div class="col-md-3">
+                        {{postulante_form.nombre |as_crispy_field}}
+                    </div>
+                    <div class="col-md-1">
+                        {{postulante_form.sexo |as_crispy_field}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        {{postulante_form.celular |as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{postulante_form.correo |as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{postulante_form.fecha_nac |as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{postulante_form.distrito |as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{postulante_form.provincia |as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{postulante_form.departamento |as_crispy_field}}
+
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                </div>
+                <h4>Información Académica:</h4>
+                <div class="row">
+                    <div class="col-md-5">
+                        {{postulante_form.inst_procedencia |as_crispy_field}}
+                    </div>
+                    <div class="col-md-5">
+                        {{postulante_form.direccion |as_crispy_field}}
+
+                    </div>
+                    <div class="col-md-2">
+                        {{postulante_form.egreso |as_crispy_field}}                        
+                    </div>
+                </div>
+                <h4>Programa de estudios al que postular:</h4>
+                <div class="row">
+                    <div class="col-md-5">
+                        {{postulante_form.carrera |as_crispy_field}}                        
+                    </div>
+                    <div class="col-md-5">
+                        {{postulante_form.seg_carrera |as_crispy_field}}                        
+                    </div>
+                    <div class="col-md-2">
+                        {{postulante_form.num_operacion |as_crispy_field}}                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        {{postulante_form.foto |as_crispy_field}}                        
+                    </div>
+                    <div class="col-md-3">
+                        {{postulante_form.dni |as_crispy_field}}                        
+                    </div>
+                    <div class="col-md-3">
+                        {{postulante_form.certificado |as_crispy_field}}                        
+                    </div>
+                    <div class="col-md-3">
+                        {{postulante_form.voucher |as_crispy_field}}                        
+                    </div>
+                </div>
+                    
+                    <hr>
+                    {{postulante_form.dec_juarada |as_crispy_field}}   
+                    <hr>                   
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary " type="submit">Guardar</button>
+                </div>
+            </form>  
+        </div>
+              
+    </div>
+</div>
+    
+{% endblock content %}
+    

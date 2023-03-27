@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    ADMISIÓN 2023
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+
+    <div class="col-md-offset-3">
+        <div class="card text-center m-4">
+            <div class="card-header">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success"><strong>Registro Satisfactorio</strong></button>  </div>
+                </div>
+            <div class="card-body">
+              <h5 class="card-title">Validar su inscripción</h5>
+              <hr>
+              <ol class="text-lg-start">
+                <li>Revisar la bandeja de entrada o <strong>SPAM</strong>  de su correo electrónico </li>
+                <li>Debe visualizar el mensaje de confirmacion de su inscripción por parte del correo <strong>admision@iestparib.edu.pe</strong></li>
+                <!--<li>Estaremos validando el voucher de pago mientras se genera su ficha de inscripción</li>-->
+              </ol>
+            </div>
+            <!--<div class="card-footer text-muted"><strong>NOTA : La ficha de inscripción(.pdf) se enviara a su correo en un lapso de 10 min.</strong> </div>-->
+          </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+    
