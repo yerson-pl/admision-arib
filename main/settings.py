@@ -31,7 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://web-production-cb86.up.railway.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
