@@ -384,7 +384,7 @@ def postulante_print(self, pk=None):
                 obtener.""", paragraph))
     elements.append(Spacer(5, 10))
     today = timezone.now()
-    locale.setlocale(locale.LC_ALL, 'es_ES.UTF-8')
+    #locale.setlocale(locale.LC_ALL, 'es_ES.UTF-8')
     elements.append(Paragraph(f"Ichuña, {today.strftime('%d de %B del %Y')}", lugar_fecha))
 
     elements.append(Spacer(20, 40))
