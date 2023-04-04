@@ -17,6 +17,7 @@ urlpatterns = [
     path('postulantes/list', views.listar, name='postulante_list'),
     #reportes
     path('postulantes/print', views.postulante_print, name='postulante_print'),
-    path('postulantes/print/<int:pk>', views.postulante_print, name='postulante_print_one'),  
+    path('postulantes/print/<int:pk>', views.postulante_print, name='postulante_print_one'),
+    path('postulantes/grafico', views.grafico, name='postulante_grafico')  
 
 ]

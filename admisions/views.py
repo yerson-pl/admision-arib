@@ -28,6 +28,9 @@ from reportlab.platypus import SimpleDocTemplate, Table, Paragraph, Frame, Table
 #
 from .forms import PostulanteForm
 from .models import Postulante
+import json as simplejson
+import random
+
 
 styles = getSampleStyleSheet()
 styleN = styles['Normal']
@@ -406,3 +409,31 @@ def postulante_print(self, pk=None):
     response.write(buff.getvalue())  
     buff.close()  
     return response 
+
+
+
+
+def grafico(request):
+    data = Postulante.objects.all()
+    carrera = []
+    seg_carrera = []
+    color = []
+    i = 0
+    for item in data:
+        carrera.append(item.carrera)
+        r = lambda: random.randint(0, 255)
+        r = lambda: random.randint(0, 255)
+        color.append('#%02X%02X%02X' % (r(), r(), r()))
+        seg_carrera.append(item.seg_carrera)
+        i += 1
+
+    carrera = simplejson.dumps(carrera)
+    seg_carrera = simplejson.dumps(seg_carrera)
+    context = {
+       'carrera': carrera,
+       'seg_carrera': seg_carrera,
+       'datos': data,
+       'i': i
+    }
+    return render(request, 'admision/grafico.html', context)
+
